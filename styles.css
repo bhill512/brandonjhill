@@ -175,8 +175,9 @@ textarea {
 }
 
 .anchor-top {
-  position: relative;
-  top: -72px;
+  height: 1px;
+  scroll-margin-top: 92px;
+  pointer-events: none;
 }
 
 .hero {
