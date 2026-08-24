@@ -67,6 +67,64 @@
     history.pushState(null, "", href);
   });
 
+  // Scroll reveal for cards and prose (opt-in from JS so no-JS stays visible)
+  if (!prefersReducedMotion && "IntersectionObserver" in window) {
+    const revealTargets = $$(
+      ".prose, .fact-grid > .card, .timeline-item, .cards-3 > .card, .cards-2 > .card, .contact-grid > .card"
+    );
+
+    if (revealTargets.length) {
+      revealTargets.forEach((el) => el.setAttribute("data-reveal", ""));
+
+      const revealObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          });
+        },
+        { rootMargin: "0px 0px -10% 0px", threshold: 0.08 }
+      );
+
+      revealTargets.forEach((el) => revealObserver.observe(el));
+    }
+  }
+
+  // Highlight the nav link for the section currently in view
+  if ("IntersectionObserver" in window) {
+    const navAnchors = $$('#nav-links a[href^="#"]');
+    const sections = navAnchors
+      .map((a) => document.getElementById((a.getAttribute("href") || "").slice(1)))
+      .filter((el) => el instanceof HTMLElement);
+
+    if (sections.length) {
+      const visible = new Set();
+
+      const setCurrent = () => {
+        const current = sections.find((section) => visible.has(section));
+        navAnchors.forEach((a) => {
+          const isCurrent = current != null && a.getAttribute("href") === `#${current.id}`;
+          if (isCurrent) a.setAttribute("aria-current", "true");
+          else a.removeAttribute("aria-current");
+        });
+      };
+
+      const sectionObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) visible.add(entry.target);
+            else visible.delete(entry.target);
+          });
+          setCurrent();
+        },
+        { rootMargin: "-45% 0px -45% 0px" }
+      );
+
+      sections.forEach((section) => sectionObserver.observe(section));
+    }
+  }
+
   // Modal (open/close + focus management + tab trap)
   const modalRoot = $("#modal-contact");
   const modalDialog = modalRoot ? $(".modal-dialog", modalRoot) : null;
