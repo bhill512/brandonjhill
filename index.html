@@ -659,6 +659,30 @@
 					<div class="grid cards-2">
 						<article class="card">
 							<p class="card-label">Planet DDS</p>
+							<h3 class="card-title">Internal developer portal (Backstage)</h3>
+							<p class="card-body">
+								Hackathon-winning internal developer platform built on
+								Backstage. An engineer can scaffold a fully-wired .NET service
+								(repo, Azure DevOps pipeline, branch policies, and security
+								gates) without touching the plumbing. I built the AI-guided
+								onboarding scaffolder, which generates a plain-English Claude
+								Code setup script for non-technical users, and the .NET
+								template’s security gate: PII scanning, automated review, and
+								scanner orchestration wired into the branch-policy pipeline.
+								Auth via Microsoft Entra ID.
+							</p>
+							<ul class="tags">
+								<li class="tag">Backstage</li>
+								<li class="tag">TypeScript</li>
+								<li class="tag">React</li>
+								<li class="tag">.NET</li>
+								<li class="tag">Azure DevOps</li>
+								<li class="tag">PowerShell</li>
+							</ul>
+						</article>
+
+						<article class="card">
+							<p class="card-label">Planet DDS</p>
 							<h3 class="card-title">MCP systems-of-record server</h3>
 							<p class="card-body">
 								A custom Model Context Protocol server unifying Jira,
@@ -692,17 +716,43 @@
 
 						<article class="card">
 							<p class="card-label">Planet DDS</p>
-							<h3 class="card-title">Image-quality model pipeline</h3>
+							<h3 class="card-title">X-ray denoising models</h3>
 							<p class="card-body">
-								Extraction and de-identification of production imaging data,
-								training-set assembly, and training and evaluation of
-								image-restoration models.
+								Trained a DRUNet denoiser for dental radiographs on a fork of
+								KAIR, ETH Zürich’s PyTorch image-restoration toolbox, using a
+								Poisson shot-noise model rather than Gaussian: the physically
+								correct noise process for photon-counting X-ray imaging. Built
+								the dataset loader to read raw DICOM directly, including
+								UID-named files with no extension detected by magic bytes, and
+								to condition the network on a per-image noise-level map.
 							</p>
 							<ul class="tags">
-								<li class="tag">Python</li>
 								<li class="tag">PyTorch</li>
-								<li class="tag">KAIR</li>
-								<li class="tag">Azure</li>
+								<li class="tag">DRUNet</li>
+								<li class="tag">DICOM</li>
+								<li class="tag">Python</li>
+								<li class="tag">Poisson noise</li>
+							</ul>
+						</article>
+
+						<article class="card">
+							<p class="card-label">Planet DDS</p>
+							<h3 class="card-title">Denoiser inference app</h3>
+							<p class="card-body">
+								A Flask app to run the trained SCUNet and DRUNet denoisers
+								interactively against dental X-rays. Auto-detects model
+								architecture from checkpoint state-dict keys, runs CUDA
+								inference, takes DICOM input directly, and offers classical
+								restoration (Richardson&ndash;Lucy deconvolution and guided
+								filtering) alongside the learned models for side-by-side
+								comparison.
+							</p>
+							<ul class="tags">
+								<li class="tag">Flask</li>
+								<li class="tag">PyTorch</li>
+								<li class="tag">OpenCV</li>
+								<li class="tag">pydicom</li>
+								<li class="tag">CUDA</li>
 							</ul>
 						</article>
 
