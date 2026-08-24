@@ -11,7 +11,7 @@
 			content="dark light"
 		/>
 
-		<title>Brandon J. Hill — Software Engineer</title>
+		<title>Brandon J. Hill | Software Engineer</title>
 		<meta
 			name="description"
 			content="Brandon J. Hill is a Colorado Springs-based remote software engineer with ten years building production web applications, release automation, and agent-facing developer tooling across .NET, TypeScript, and Azure."
@@ -40,7 +40,7 @@
 		/>
 		<meta
 			property="og:title"
-			content="Brandon J. Hill — Software Engineer"
+			content="Brandon J. Hill | Software Engineer"
 		/>
 		<meta
 			property="og:description"
@@ -62,7 +62,7 @@
 		/>
 		<meta
 			name="twitter:title"
-			content="Brandon J. Hill — Software Engineer"
+			content="Brandon J. Hill | Software Engineer"
 		/>
 		<meta
 			name="twitter:description"
@@ -82,6 +82,20 @@
 		<link
 			rel="shortcut icon"
 			href="assets/favicon.svg"
+		/>
+
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap"
 		/>
 		<link
 			rel="stylesheet"
@@ -201,79 +215,90 @@
 			></div>
 
 			<section class="hero">
-				<div class="container hero-inner">
-					<p class="badge">
-						Software Engineer • Platform &amp; Release Automation • Agentic
-						Tooling
-					</p>
-					<h1>Brandon J. Hill</h1>
-					<p class="subhead">
-						Ten years building production web applications, release automation,
-						and the internal tooling other engineers work inside — across .NET,
-						TypeScript, and Azure.
-					</p>
+				<div class="container hero-grid">
+					<div class="hero-main">
+						<p class="badge">
+							Software Engineer · Platform &amp; Release Automation · Agentic
+							Tooling
+						</p>
+						<h1>Brandon J. Hill</h1>
+						<p class="subhead">
+							Ten years building production web applications, release
+							automation, and the internal tooling other engineers work inside,
+							across .NET, TypeScript, and Azure.
+						</p>
 
-					<div class="hero-actions">
-						<a
-							class="btn btn-primary"
-							href="#contact"
-							>Contact</a
-						>
-						<a
-							class="btn btn-secondary"
-							href="#experience"
-							>See the work</a
-						>
+						<div class="hero-actions">
+							<a
+								class="btn btn-primary"
+								href="#contact"
+								>Contact</a
+							>
+							<a
+								class="btn btn-secondary"
+								href="#experience"
+								>See the work</a
+							>
+						</div>
+
+						<div class="hero-links">
+							<a
+								class="pill"
+								href="https://github.com/bhill512"
+								rel="me noopener noreferrer"
+								target="_blank"
+							>
+								GitHub
+							</a>
+							<a
+								class="pill"
+								href="https://www.linkedin.com/in/bhill25/"
+								rel="me noopener noreferrer"
+								target="_blank"
+							>
+								LinkedIn
+							</a>
+							<a
+								class="pill"
+								href="mailto:brandon.hill1025@gmail.com"
+							>
+								Email
+							</a>
+						</div>
+
+						<p class="micro">
+							Also building: Hill Peak Holdings, operator-led acquisitions of
+							durable small businesses.
+						</p>
 					</div>
 
-					<dl class="hero-stats">
-						<div class="stat">
-							<dt class="stat-label">Experience</dt>
-							<dd class="stat-value">10 years</dd>
-						</div>
-						<div class="stat">
-							<dt class="stat-label">Clearance</dt>
-							<dd class="stat-value">TS/SCI (inactive)</dd>
-						</div>
-						<div class="stat">
-							<dt class="stat-label">Education</dt>
-							<dd class="stat-value">M.S. + B.S. CS</dd>
-						</div>
-						<div class="stat">
-							<dt class="stat-label">Service</dt>
-							<dd class="stat-value">U.S. Army Infantry</dd>
-						</div>
-					</dl>
-
-					<p class="micro">
-						Also building: Hill Peak Holdings — operator-led acquisitions of
-						durable small businesses.
-					</p>
-
-					<div class="hero-links">
-						<a
-							class="pill"
-							href="https://github.com/bhill512"
-							rel="me noopener noreferrer"
-							target="_blank"
-						>
-							GitHub
-						</a>
-						<a
-							class="pill"
-							href="https://www.linkedin.com/in/bhill25/"
-							rel="me noopener noreferrer"
-							target="_blank"
-						>
-							LinkedIn
-						</a>
-						<a
-							class="pill"
-							href="mailto:brandon.hill1025@gmail.com"
-						>
-							Email
-						</a>
-					</div>
+					<aside
+						class="hero-panel"
+						aria-label="At a glance"
+					>
+						<dl class="stat-list">
+							<div class="stat">
+								<dt class="stat-label">Experience</dt>
+								<dd class="stat-value">10 years</dd>
+							</div>
+							<div class="stat">
+								<dt class="stat-label">Clearance</dt>
+								<dd class="stat-value">TS/SCI (inactive)</dd>
+							</div>
+							<div class="stat">
+								<dt class="stat-label">Education</dt>
+								<dd class="stat-value">M.S. + B.S. CS</dd>
+							</div>
+							<div class="stat">
+								<dt class="stat-label">Service</dt>
+								<dd class="stat-value">U.S. Army Infantry</dd>
+							</div>
+							<div class="stat">
+								<dt class="stat-label">Based</dt>
+								<dd class="stat-value">Colorado Springs, CO</dd>
+							</div>
+						</dl>
+					</aside>
 				</div>
 			</section>
 
@@ -283,16 +308,14 @@
 			>
 				<div class="container">
 					<h2 class="section-title">
-						<img
-							class="section-mark"
-							src="assets/header-mark.svg"
-							width="120"
-							height="24"
-							alt=""
+						<span
+							class="section-num"
 							aria-hidden="true"
-						/>
-						About
+							>01</span
+						>
+						<span class="section-name">About</span>
 					</h2>
+
 					<div class="prose">
 						<p>
 							I’m a Colorado Springs-based remote software engineer with ten
@@ -309,8 +332,8 @@
 							and a custom MCP server that unifies Jira, Confluence, and Azure
 							DevOps behind a single queryable, agent-facing interface. I also
 							built the data and training pipeline behind our image-quality
-							models — extraction and de-identification through PyTorch training
-							and evaluation.
+							models, from extraction and de-identification through PyTorch
+							training and evaluation.
 						</p>
 						<p>
 							Before Planet DDS: enterprise workflow automation at Fiserv, and
@@ -323,7 +346,7 @@
 						<p>
 							Outside of work I’m in the mountains, running a local-first home
 							server, or deep in the kinds of stories that explore systems,
-							resilience, and long arcs — Fallout included.
+							resilience, and long arcs. Fallout included.
 						</p>
 					</div>
 
@@ -337,7 +360,7 @@
 						</div>
 						<div class="card">
 							<p class="card-label">Security clearance</p>
-							<h3 class="card-title">TS/SCI — inactive since 2020</h3>
+							<h3 class="card-title">TS/SCI (inactive since 2020)</h3>
 							<p class="card-body">
 								Held supporting Boeing and Harris. U.S. citizen; eligible to
 								obtain and maintain.
@@ -347,16 +370,16 @@
 							<p class="card-label">Military service</p>
 							<h3 class="card-title">U.S. Army Infantryman</h3>
 							<p class="card-body">
-								2008–2012. Combat deployments to Iraq and Afghanistan; awarded
-								the Combat Infantryman Badge.
+								2008&ndash;2012. Combat deployments to Iraq and Afghanistan;
+								awarded the Combat Infantryman Badge.
 							</p>
 						</div>
 						<div class="card">
-							<p class="card-label">Based</p>
-							<h3 class="card-title">Colorado Springs, CO</h3>
+							<p class="card-label">Working style</p>
+							<h3 class="card-title">Remote-first, Mountain Time</h3>
 							<p class="card-body">
-								Remote-first, Mountain Time. Comfortable owning a system end to
-								end and being the person on call for it.
+								Comfortable owning a system end to end and being the person on
+								call for it.
 							</p>
 						</div>
 					</div>
@@ -369,15 +392,12 @@
 			>
 				<div class="container">
 					<h2 class="section-title">
-						<img
-							class="section-mark"
-							src="assets/header-mark.svg"
-							width="120"
-							height="24"
-							alt=""
+						<span
+							class="section-num"
 							aria-hidden="true"
-						/>
-						Experience
+							>02</span
+						>
+						<span class="section-name">Experience</span>
 					</h2>
 
 					<ol
@@ -386,10 +406,11 @@
 					>
 						<li class="card timeline-item">
 							<div class="card-top">
-								<h3 class="card-title">
-									Software Engineer — Planet DDS (Apteryx Imaging)
-								</h3>
-								<p class="card-meta">May 2023 – Present · Remote</p>
+								<div class="card-head">
+									<h3 class="card-title">Software Engineer</h3>
+									<p class="card-org">Planet DDS (Apteryx Imaging)</p>
+								</div>
+								<p class="card-meta">May 2023 &ndash; Present · Remote</p>
 							</div>
 							<p class="card-body">
 								Ship user-facing features in a production React/TypeScript
@@ -397,7 +418,7 @@
 								framework upgrades, and production monitoring and remediation
 								across Azure App Service. Designed and shipped a custom MCP
 								server unifying Jira, Confluence, and Azure DevOps into one
-								queryable interface — an agent-facing integration layer over
+								queryable interface: an agent-facing integration layer over
 								three systems of record, adopted beyond the originating team.
 								Built the automated release pipelines and audit trail now used
 								across multiple engineering teams, plus the data and training
@@ -416,11 +437,17 @@
 
 						<li class="card timeline-item">
 							<div class="card-top">
-								<h3 class="card-title">
-									Software Development Engineer IV — Fiserv (Account Processing
-									/ Enterprise)
-								</h3>
-								<p class="card-meta">Feb 2021 – Oct 2022 · Alpharetta, GA</p>
+								<div class="card-head">
+									<h3 class="card-title">
+										Software Development Engineer IV
+									</h3>
+									<p class="card-org">
+										Fiserv (Account Processing / Enterprise)
+									</p>
+								</div>
+								<p class="card-meta">
+									Feb 2021 &ndash; Oct 2022 · Alpharetta, GA
+								</p>
 							</div>
 							<p class="card-body">
 								Engineered automated C#/.NET Core integrations between HR and
@@ -440,10 +467,13 @@
 
 						<li class="card timeline-item">
 							<div class="card-top">
-								<h3 class="card-title">
-									Software Engineer 3 — Boeing Defense, Space &amp; Security
-								</h3>
-								<p class="card-meta">Jul 2018 – Jul 2019 · Colorado Springs, CO</p>
+								<div class="card-head">
+									<h3 class="card-title">Software Engineer 3</h3>
+									<p class="card-org">Boeing Defense, Space &amp; Security</p>
+								</div>
+								<p class="card-meta">
+									Jul 2018 &ndash; Jul 2019 · Colorado Springs, CO
+								</p>
 							</div>
 							<p class="card-body">
 								Full-stack Java developer building RESTful microservices for a
@@ -462,11 +492,16 @@
 
 						<li class="card timeline-item">
 							<div class="card-top">
-								<h3 class="card-title">
-									Software Engineer 2 — Harris Corporation (now L3Harris), Space
-									and Intelligence Systems
-								</h3>
-								<p class="card-meta">Feb 2016 – Jul 2018 · Colorado Springs, CO</p>
+								<div class="card-head">
+									<h3 class="card-title">Software Engineer 2</h3>
+									<p class="card-org">
+										Harris Corporation (now L3Harris), Space and Intelligence
+										Systems
+									</p>
+								</div>
+								<p class="card-meta">
+									Feb 2016 &ndash; Jul 2018 · Colorado Springs, CO
+								</p>
 							</div>
 							<p class="card-body">
 								System sustainment for mission-critical .NET applications:
@@ -485,8 +520,13 @@
 
 						<li class="card timeline-item">
 							<div class="card-top">
-								<h3 class="card-title">Infantryman — United States Army</h3>
-								<p class="card-meta">Jun 2008 – Sep 2012 · Iraq &amp; Afghanistan</p>
+								<div class="card-head">
+									<h3 class="card-title">Infantryman</h3>
+									<p class="card-org">United States Army</p>
+								</div>
+								<p class="card-meta">
+									Jun 2008 &ndash; Sep 2012 · Iraq &amp; Afghanistan
+								</p>
 							</div>
 							<p class="card-body">
 								Combat deployments to Iraq and Afghanistan. Awarded the Combat
@@ -504,15 +544,12 @@
 			>
 				<div class="container">
 					<h2 class="section-title">
-						<img
-							class="section-mark"
-							src="assets/header-mark.svg"
-							width="120"
-							height="24"
-							alt=""
+						<span
+							class="section-num"
 							aria-hidden="true"
-						/>
-						Expertise
+							>03</span
+						>
+						<span class="section-name">Expertise</span>
 					</h2>
 
 					<div class="grid cards-3">
@@ -533,7 +570,7 @@
 						<article class="card">
 							<h3 class="card-title">TypeScript / React</h3>
 							<p class="card-body">
-								Production feature work in a live web application — framework
+								Production feature work in a live web application, framework
 								upgrades and architecture decisions included.
 							</p>
 							<ul class="tags">
@@ -548,7 +585,7 @@
 						<article class="card">
 							<h3 class="card-title">Cloud &amp; Platform</h3>
 							<p class="card-body">
-								Deploying, observing, and remediating in production — including
+								Deploying, observing, and remediating in production, including
 								the incident at the far end of it.
 							</p>
 							<ul class="tags">
@@ -591,8 +628,8 @@
 						<article class="card">
 							<h3 class="card-title">Agentic AI Tooling</h3>
 							<p class="card-body">
-								Agent-facing integration layers over real systems of record —
-								built to be queried, not demoed.
+								Agent-facing integration layers over real systems of record,
+								built to be queried rather than demoed.
 							</p>
 							<ul class="tags">
 								<li class="tag">MCP</li>
@@ -611,15 +648,12 @@
 			>
 				<div class="container">
 					<h2 class="section-title">
-						<img
-							class="section-mark"
-							src="assets/header-mark.svg"
-							width="120"
-							height="24"
-							alt=""
+						<span
+							class="section-num"
 							aria-hidden="true"
-						/>
-						Projects
+							>04</span
+						>
+						<span class="section-name">Projects</span>
 					</h2>
 
 					<div class="grid cards-2">
@@ -646,7 +680,7 @@
 							<p class="card-body">
 								Automated pipelines that pull Jira data into a CDN-backed
 								system, plus the release framework and audit trail now used
-								across multiple engineering teams — replacing manual
+								across multiple engineering teams, replacing manual
 								documentation and ad-hoc deployments.
 							</p>
 							<ul class="tags">
@@ -674,7 +708,7 @@
 
 						<article class="card">
 							<p class="card-label">Bitway, LLC</p>
-							<h3 class="card-title">Summarized Headlines — Top Stories</h3>
+							<h3 class="card-title">Summarized Headlines: Top Stories</h3>
 							<p class="card-body">
 								An unattended content-generation pipeline running end to end:
 								ingestion, AI tooling, text-to-speech, and rendering. Designed,
@@ -710,7 +744,7 @@
 							<p class="card-label">Independent</p>
 							<h3 class="card-title">Local-first home infrastructure</h3>
 							<p class="card-body">
-								A home server I run, back up, and monitor myself — self-hosted
+								A home server I run, back up, and monitor myself: self-hosted
 								services, data ownership, and a low-stakes place to keep the
 								operational habits sharp.
 							</p>
@@ -734,7 +768,7 @@
 									href="https://hillpeakholdings.com/"
 									rel="noopener noreferrer"
 									target="_blank"
-									>Hill Peak Holdings — buy box &amp; process</a
+									>Hill Peak Holdings: buy box &amp; process</a
 								>
 							</p>
 						</article>
@@ -748,20 +782,18 @@
 			>
 				<div class="container">
 					<h2 class="section-title">
-						<img
-							class="section-mark"
-							src="assets/header-mark.svg"
-							width="120"
-							height="24"
-							alt=""
+						<span
+							class="section-num"
 							aria-hidden="true"
-						/>
-						Contact
+							>05</span
+						>
+						<span class="section-name">Contact</span>
 					</h2>
 
 					<div class="contact-grid">
 						<div class="card contact-card">
-							<h3 class="card-title">Direct</h3>
+							<p class="card-label">Direct</p>
+							<h3 class="card-title">Email or phone</h3>
 							<p class="card-body contact-lines">
 								<a
 									class="contact-line"
@@ -790,7 +822,8 @@
 						</div>
 
 						<div class="card contact-card">
-							<h3 class="card-title">Message</h3>
+							<p class="card-label">Message</p>
+							<h3 class="card-title">Send a note</h3>
 							<p class="card-body">
 								Use a short message and I’ll reply by email. If you’re reaching
 								out about a role, add the stack and the problem; if it’s about a
@@ -1008,7 +1041,7 @@
 							data-status="success"
 							hidden
 						>
-							Message sent. Thanks—I'll reply by email.
+							Message sent. Thanks, I’ll reply by email.
 						</p>
 						<p
 							class="status status-error"

@@ -40,10 +40,10 @@ Single-page personal site for `brandonjhill.com` built with plain HTML/CSS/vanil
 ## Update copy + links
 
 - **Site content**: edit sections in `index.html` (`#about`, `#experience`, `#expertise`, `#projects`, `#contact`)
-- **Keep in sync with the résumé**: the About, Experience, and Projects sections mirror the current résumé and LinkedIn profile — dates, titles, and employer names should match
+- **Keep in sync with the résumé**: the About, Experience, and Projects sections mirror the current résumé and LinkedIn profile: dates, titles, and employer names should match
 - **HoldCo link**: the “For Brokers” and “Hill Peak Holdings” cards link to `https://hillpeakholdings.com/` in `index.html`
 - **Formspree endpoint**: update the form attribute `data-formspree-endpoint` in `index.html` if it ever changes
 
 ## Notes
 
-- `og:image` points at `/assets/hero.jpg`, which is not committed yet — link previews fall back until that file is added.
+- `og:image` points at `/assets/hero.jpg`, which is not committed yet, so link previews fall back until that file is added.
