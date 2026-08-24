@@ -319,29 +319,34 @@
 					<div class="prose">
 						<p>
 							I’m a Colorado Springs-based remote software engineer with ten
-							years of full-lifecycle experience. Today I ship user-facing
-							features in a production React/TypeScript imaging platform at
-							Planet DDS (Apteryx Imaging), and own the architecture calls,
-							framework upgrades, and production monitoring and remediation that
-							keep it running on Azure.
+							years across production web applications, platform engineering,
+							and machine learning. At Planet DDS (Apteryx Imaging) I ship
+							React and TypeScript features in a production imaging platform,
+							and own the architecture calls, framework upgrades, and the
+							production operations that keep it running on Azure App Service.
 						</p>
 						<p>
-							Most of what I build is infrastructure for other engineers:
-							automated release pipelines in PowerShell and Azure DevOps, a
-							release framework and audit trail now used across multiple teams,
-							and a custom MCP server that unifies Jira, Confluence, and Azure
-							DevOps behind a single queryable, agent-facing interface. I also
-							built the data and training pipeline behind our image-quality
-							models, from extraction and de-identification through PyTorch
-							training and evaluation.
+							Most of what I build is infrastructure other engineers work
+							inside: the release automation and internal tooling the
+							engineering org runs on, an internal developer portal on
+							Backstage that scaffolds a fully-wired .NET service, and a custom
+							MCP server that unifies Jira, Confluence, and Azure DevOps behind
+							a single queryable interface.
+						</p>
+						<p>
+							On the machine learning side, I trained DRUNet denoisers for
+							dental radiographs using a Poisson shot-noise model, the
+							physically correct noise process for photon-counting X-ray
+							imaging. I also built the DICOM de-identification and
+							dataset-provenance pipeline behind them, so there is an auditable
+							record of which data trained which model.
 						</p>
 						<p>
 							Before Planet DDS: enterprise workflow automation at Fiserv, and
 							mission systems in defense and space at Boeing Defense, Space
-							&amp; Security and Harris Space and Intelligence Systems. I’m a
-							U.S. Army infantry veteran with combat deployments to Iraq and
-							Afghanistan. That experience shaped how I work: steady under
-							pressure, process-aware, and committed to doing the basics well.
+							&amp; Security and Harris Space and Intelligence Systems, where I
+							held a TS/SCI clearance. Before that, four years in the U.S. Army
+							as an infantryman.
 						</p>
 						<p>
 							Outside of work I’m in the mountains, running a local-first home
@@ -554,20 +559,6 @@
 
 					<div class="grid cards-3">
 						<article class="card">
-							<h3 class="card-title">.NET / C#</h3>
-							<p class="card-body">
-								Backend services, integrations, and background jobs built to run
-								unattended.
-							</p>
-							<ul class="tags">
-								<li class="tag">C#</li>
-								<li class="tag">.NET</li>
-								<li class="tag">ASP.NET Core</li>
-								<li class="tag">PowerShell</li>
-							</ul>
-						</article>
-
-						<article class="card">
 							<h3 class="card-title">TypeScript / React</h3>
 							<p class="card-body">
 								Production feature work in a live web application, framework
@@ -583,7 +574,53 @@
 						</article>
 
 						<article class="card">
-							<h3 class="card-title">Cloud &amp; Platform</h3>
+							<h3 class="card-title">Platform Engineering</h3>
+							<p class="card-body">
+								Internal developer platforms and the paved road other engineers
+								ship on: scaffolding, pipelines, and policy in one place.
+							</p>
+							<ul class="tags">
+								<li class="tag">Backstage</li>
+								<li class="tag">Internal developer platforms</li>
+								<li class="tag">CI/CD</li>
+								<li class="tag">Release automation</li>
+								<li class="tag">Kubernetes</li>
+								<li class="tag">Docker</li>
+							</ul>
+						</article>
+
+						<article class="card">
+							<h3 class="card-title">Machine Learning</h3>
+							<p class="card-body">
+								Training and evaluating image-restoration models on real
+								clinical data, including the pipeline that feeds them.
+							</p>
+							<ul class="tags">
+								<li class="tag">PyTorch</li>
+								<li class="tag">DRUNet / SCUNet</li>
+								<li class="tag">DICOM</li>
+								<li class="tag">De-identification</li>
+								<li class="tag">Data provenance</li>
+							</ul>
+						</article>
+
+						<article class="card">
+							<h3 class="card-title">.NET / C#</h3>
+							<p class="card-body">
+								Backend services, REST APIs, and background jobs built to run
+								unattended.
+							</p>
+							<ul class="tags">
+								<li class="tag">C#</li>
+								<li class="tag">.NET</li>
+								<li class="tag">ASP.NET Core</li>
+								<li class="tag">REST APIs</li>
+								<li class="tag">PowerShell</li>
+							</ul>
+						</article>
+
+						<article class="card">
+							<h3 class="card-title">Cloud &amp; Data</h3>
 							<p class="card-body">
 								Deploying, observing, and remediating in production, including
 								the incident at the far end of it.
@@ -592,33 +629,6 @@
 								<li class="tag">Azure App Service</li>
 								<li class="tag">Azure DevOps</li>
 								<li class="tag">AWS</li>
-								<li class="tag">Kubernetes</li>
-								<li class="tag">Docker</li>
-							</ul>
-						</article>
-
-						<article class="card">
-							<h3 class="card-title">Release Automation &amp; CI/CD</h3>
-							<p class="card-body">
-								Turning deployments into a repeatable, auditable process instead
-								of a ritual that depends on who is awake.
-							</p>
-							<ul class="tags">
-								<li class="tag">CI/CD</li>
-								<li class="tag">Release governance</li>
-								<li class="tag">Audit trails</li>
-								<li class="tag">Monitoring</li>
-							</ul>
-						</article>
-
-						<article class="card">
-							<h3 class="card-title">APIs, Data &amp; Integrations</h3>
-							<p class="card-body">
-								Interfaces and schemas that are predictable, versionable, and
-								safe to operate.
-							</p>
-							<ul class="tags">
-								<li class="tag">REST</li>
 								<li class="tag">SQL Server</li>
 								<li class="tag">PostgreSQL</li>
 								<li class="tag">Python</li>
@@ -635,7 +645,6 @@
 								<li class="tag">MCP</li>
 								<li class="tag">Anthropic API</li>
 								<li class="tag">Claude Code</li>
-								<li class="tag">PyTorch</li>
 							</ul>
 						</article>
 					</div>
@@ -753,6 +762,26 @@
 								<li class="tag">OpenCV</li>
 								<li class="tag">pydicom</li>
 								<li class="tag">CUDA</li>
+							</ul>
+						</article>
+
+						<article class="card">
+							<p class="card-label">Planet DDS</p>
+							<h3 class="card-title">
+								DICOM de-identification and dataset provenance
+							</h3>
+							<p class="card-body">
+								Built the de-identification and anonymization pipeline for
+								model training data, plus automated dataset-provenance reports
+								submitted to compliance: an auditable record of which data
+								trained which model. Started independently, before it was
+								assigned.
+							</p>
+							<ul class="tags">
+								<li class="tag">DICOM</li>
+								<li class="tag">Python</li>
+								<li class="tag">Compliance</li>
+								<li class="tag">Data provenance</li>
 							</ul>
 						</article>
 
