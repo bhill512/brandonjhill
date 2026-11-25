@@ -34,16 +34,11 @@ Single-page personal site for `brandonjhill.com` built with plain HTML/CSS/vanil
 ## Update assets
 
 - **OG image**
-  - Replace the placeholder OG image referenced in `index.html` at `/assets/hero.jpg`.
-  - Add your image file to `assets/hero.jpg` (or update the meta tags to match your chosen path).
+  - Link previews use `assets/og-image.png` (1200×630), referenced by absolute URL in the `og:image` and `twitter:image` tags in `index.html`.
 
 ## Update copy + links
 
 - **Site content**: edit sections in `index.html` (`#about`, `#experience`, `#expertise`, `#projects`, `#contact`)
 - **Keep in sync with the résumé**: the About, Experience, and Projects sections mirror the current résumé and LinkedIn profile: dates, titles, and employer names should match
-- **HoldCo link**: the “For Brokers” and “Hill Peak Holdings” cards link to `https://hillpeakholdings.com/` in `index.html`
+- **HoldCo link**: the “Hill Peak Holdings” project card links to `https://hillpeakholdings.com/` in `index.html`
 - **Formspree endpoint**: update the form attribute `data-formspree-endpoint` in `index.html` if it ever changes
-
-## Notes
-
-- `og:image` points at `/assets/hero.jpg`, which is not committed yet, so link previews fall back until that file is added.
