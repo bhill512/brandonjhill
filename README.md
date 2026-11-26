@@ -40,5 +40,6 @@ Single-page personal site for `brandonjhill.com` built with plain HTML/CSS/vanil
 
 - **Site content**: edit sections in `index.html` (`#about`, `#experience`, `#expertise`, `#projects`, `#contact`)
 - **Keep in sync with the résumé**: the About, Experience, and Projects sections mirror the current résumé and LinkedIn profile: dates, titles, and employer names should match
-- **HoldCo link**: the “Hill Peak Holdings” project card links to `https://hillpeakholdings.com/` in `index.html`
+- **Résumé**: the hero's “Résumé (PDF)” button serves `assets/Brandon-Hill-Resume.pdf`. Its source is `assets/resume-source.html`; to regenerate, print it with headless Edge: `msedge --headless --no-pdf-header-footer --print-to-pdf=assets/Brandon-Hill-Resume.pdf assets/resume-source.html` and check it stays one page.
+- **Projects grid**: an odd last card in a two-column grid spans the full row (`.cards-2 > .card:last-child:nth-child(odd)` in `styles.css`).
 - **Formspree endpoint**: update the form attribute `data-formspree-endpoint` in `index.html` if it ever changes

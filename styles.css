@@ -397,6 +397,11 @@ h1 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+/* An odd card out at the end of a two-column grid spans the full row. */
+.cards-2 > .card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
